@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form>
+            <div>
+                <input class="displ" type="text" name="display" value="0">
+            </div>
+            <div>
+                <input style="background-color: gray; color:black;" class="buttun"type="button" value="AC" onclick="display.value=''">
+                <input style="background-color: gray; color:black;" class="buttun"type="button" value="~" onclick="display.value=display.value.toString().slice(0,-1)">
+                <input style="background-color: gray; color:black;" class="buttun"type="button" value="%" onclick="display.value+='%'">
+                <input style="background-color: rgb(255, 153, 0); color:white;" class="buttun"type="button" value="/" onclick="display.value+='/'">
+            </div>
+            <div>
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="7" onclick="display.value+='7'">
+                <input style="background-color:#282831; color:white;"  class="buttun"type="button" value="8" onclick="display.value+='8'">
+                <input style="background-color:#282831; color:white;"  class="buttun"type="button" value="9" onclick="display.value+='9'">
+                <input style="background-color: rgb(255, 153, 0); color:white;"  class="buttun"type="button" value="*" onclick="display.value+='*'">
+            </div>
+            <div>
+                <input style="background-color:#282831; color:white;"  class="buttun"type="button" value="4" onclick="display.value+='4'">
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="5" onclick="display.value+='5'">
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="6" onclick="display.value+='6'">
+                <input style="background-color: rgb(255, 153, 0); color:white;" class="buttun"type="button" value="-" onclick="display.value+='-'">
+            </div>
+            <div>
+                <input style="background-color:#282831; color:white;"  class="buttun"type="button" value="1" onclick="display.value+='1'">
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="2" onclick="display.value+='2'">
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="3" onclick="display.value+='3'">
+                <input style="background-color: rgb(255, 153, 0); color:white;" class="buttun"type="button" value="+" onclick="display.value+='+'">
+            </div>
+            <div>
+
+                <input style="background-color:#282831; color:white; width:135px; border-radius: 30px; text-align: left; padding-left:24px;" class="buttun"type="button" value="0" onclick="display.value+='0'">
+                <input style="background-color:#282831; color:white;" class="buttun"type="button" value="." onclick="display.value+='.'">
+                <input style="background-color: rgb(255, 153, 0); color:white;" class="buttun"type="button" value="=" onclick="display.value=eval(display.value)">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
